@@ -151,7 +151,11 @@ RUN git clone https://github.com/chrisgoringe/cg-use-everywhere.git && \
     git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite && \
     git clone https://github.com/kijai/ComfyUI-HunyuanVideoWrapper.git && \
     git clone https://github.com/logtd/ComfyUI-HunyuanLoom.git && \
+    git clone https://github.com/city96/ComfyUI-GGUF && \
     git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git
+
+# needed for ComfyUI-GGUF
+pip install --upgrade gguf
 
 # Install requirements for custom nodes (if any)
 RUN for dir in */; do \
